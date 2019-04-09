@@ -12,6 +12,8 @@
 -  结合Shader谈谈对渲染管线的理解
 - 将以上三种变换相结合，打开你们的脑洞，实现有创意的动画。比如：地球绕太阳转等。 
 
+![result](assets/result-1554811238937.gif)
+
 
 
 ## 实现原理
@@ -165,7 +167,7 @@ glDrawArrays(GL_TRIANGLES, 0, 36);
 
 #### GUI菜单
 
-使用`ImGui::CollapsingHeader`和`ImGui::RadioButton`创建下拉选项：
+使用`ImGui::CollapsingHeader`和`ImGui::RadioButton`创建下拉选项，用一个CheckBox来控制是否开启深度测试：
 
 ```c++
 ImGui::Checkbox("Open depth test", &isTestDepth);
@@ -178,6 +180,8 @@ if(ImGui::CollapsingHeader("Choose Transformation")) {
 	ImGui::RadioButton("Bonus", &show_what, 3);
 }
 ```
+
+![1554811328873](assets/1554811328873.png)
 
 #### 平移Translation
 
