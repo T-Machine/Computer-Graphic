@@ -1,5 +1,19 @@
 # Project4 Transformation
 
+项目源码：[Github](https://github.com/T-Machine/Computer-Graphic)
+
+## 实现内容
+
+- 画一个立方体(cube)：边长为4， 中心位置为(0, 0, 0)。分别启动和关闭深度测试 `glEnable(GL_DEPTH_TEST) `、 `glDisable(GL_DEPTH_TEST) `，查看区别，并分析原因。 
+- 平移(Translation)：使画好的cube沿着水平或垂直方向来回移动。 
+-  旋转(Rotation)：使画好的cube沿着XoZ平面的x=z轴持续旋转。
+- 放缩(Scaling)：使画好的cube持续放大缩小。 
+- 在GUI里添加菜单栏，可以选择各种变换。
+-  结合Shader谈谈对渲染管线的理解
+- 将以上三种变换相结合，打开你们的脑洞，实现有创意的动画。比如：地球绕太阳转等。 
+
+
+
 ## 实现原理
 
 我们定义的三维空间的顶点在最终显示在屏幕上之前，需要经过多个坐标空间的转换：
