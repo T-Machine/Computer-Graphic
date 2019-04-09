@@ -34,6 +34,15 @@
     <Filter Include="shader">
       <UniqueIdentifier>{e73471c0-17b4-4f9c-827c-f36f773ca92d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="projects\ProjectTransformation">
+      <UniqueIdentifier>{c5860024-9b7e-488c-9ff6-b346135c2699}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\ProjectTransformation\glsl">
+      <UniqueIdentifier>{a950a8f2-8639-4d6c-8f0d-19325b62495c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resources">
+      <UniqueIdentifier>{3341d2d7-4cd6-4cf1-8f2a-bf5efecd40de}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\GLFW\glad\src\glad.c">
@@ -65,6 +74,9 @@
     </ClCompile>
     <ClCompile Include="projects\ProjectTriangle\ProjectTriangle.cpp">
       <Filter>projects\ProjectTriangle</Filter>
+    </ClCompile>
+    <ClCompile Include="projects\ProjectTransformation\ProjectTransformation.cpp">
+      <Filter>projects\ProjectTransformation</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +119,9 @@
     <ClInclude Include="projects\tool.h">
       <Filter>projects</Filter>
     </ClInclude>
+    <ClInclude Include="projects\ProjectTransformation\ProjectTransformation.h">
+      <Filter>projects\ProjectTransformation</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini">
@@ -124,5 +139,16 @@
     <None Include="projects\ProjectTriangle\glsl\shader.vs">
       <Filter>projects\ProjectTriangle\glsl</Filter>
     </None>
+    <None Include="projects\ProjectTransformation\glsl\shader.fs">
+      <Filter>projects\ProjectTransformation\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectTransformation\glsl\shader.vs">
+      <Filter>projects\ProjectTransformation\glsl</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="resourses\sz1.png">
+      <Filter>resources</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -2,12 +2,20 @@
 #include <GLFW/glfw3.h>
 #include <iostream>
 #include <cmath>
+
 #include "imgui/imgui.h"
 #include "imgui/imgui_impl_glfw.h"
 #include "imgui/imgui_impl_opengl3.h"
+
 #include "projects/Project.h"
 #include "projects/ProjectRasterization/ProjectRasterization.h"
 #include "projects/ProjectTriangle/ProjectTriangle.h"
+#include "projects/ProjectTransformation/ProjectTransformation.h"
+
+
+#include <glm/glm.hpp>
+#include <glm/gtc/matrix_transform.hpp>
+#include <glm/gtc/type_ptr.hpp>
 #define MAX_POINT 42000
 
 using namespace std;
@@ -27,7 +35,7 @@ int main()
 	//glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 
 	//创建窗口对象
-	GLFWwindow* window = glfwCreateWindow(WIN_W, WIN_H, "HW2", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(SCREEN_W, SCREEN_H, "HW2", NULL, NULL);
 	if (window == NULL)
 	{
 		cout << "Failed to create GLFW window" << endl;
@@ -54,7 +62,8 @@ int main()
 	ImGui_ImplOpenGL3_Init(glsl_version);
 
 	//Project *project = new ProjectRasterization();
-	Project *project = new ProjectTriangle();
+	//Project *project = new ProjectTriangle();
+	Project *project = new ProjectTransformation();
 
 	while (!glfwWindowShouldClose(window))
 	{
