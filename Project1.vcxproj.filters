@@ -43,6 +43,12 @@
     <Filter Include="resources">
       <UniqueIdentifier>{3341d2d7-4cd6-4cf1-8f2a-bf5efecd40de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="projects\ProjectCamera">
+      <UniqueIdentifier>{1296890a-ee16-4f35-ba10-267bd4e0259e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\ProjectCamera\glsl">
+      <UniqueIdentifier>{b1c33a2c-dd9d-4150-b274-2c724c1865f0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\GLFW\glad\src\glad.c">
@@ -77,6 +83,9 @@
     </ClCompile>
     <ClCompile Include="projects\ProjectTransformation\ProjectTransformation.cpp">
       <Filter>projects\ProjectTransformation</Filter>
+    </ClCompile>
+    <ClCompile Include="projects\ProjectCamera\ProjectCamera.cpp">
+      <Filter>projects\ProjectCamera</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +131,12 @@
     <ClInclude Include="projects\ProjectTransformation\ProjectTransformation.h">
       <Filter>projects\ProjectTransformation</Filter>
     </ClInclude>
+    <ClInclude Include="projects\ProjectCamera\ProjectCamera.h">
+      <Filter>projects\ProjectCamera</Filter>
+    </ClInclude>
+    <ClInclude Include="projects\Camera.h">
+      <Filter>projects</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini">
@@ -144,6 +159,12 @@
     </None>
     <None Include="projects\ProjectTransformation\glsl\shader.vs">
       <Filter>projects\ProjectTransformation\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectCamera\glsl\shader.fs">
+      <Filter>projects\ProjectCamera\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectCamera\glsl\shader.vs">
+      <Filter>projects\ProjectCamera\glsl</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
