@@ -13,6 +13,7 @@
 #include "projects/ProjectTriangle/ProjectTriangle.h"
 #include "projects/ProjectTransformation/ProjectTransformation.h"
 #include "projects/ProjectCamera/ProjectCamera.h"
+#include "projects/ProjectLights/ProjectLights.h"
 
 
 #include <glm/glm.hpp>
@@ -79,7 +80,8 @@ int main()
 	//Project *project = new ProjectRasterization();
 	//Project *project = new ProjectTriangle();
 	//Project *project = new ProjectTransformation();
-	project = new ProjectCamera(window);
+	//project = new ProjectCamera(window);
+	Project *project = new ProjectLights();
 
 	camera = new Camera(10.0f);
 
@@ -99,7 +101,7 @@ int main()
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
 
-		((ProjectCamera*)project)->updateCameraView(camera->getCameraView());
+		//((ProjectCamera*)project)->updateCameraView(camera->getCameraView());
 		project->draw();
 
 		//ImGui::ShowDemoWindow(&show_demo_window);
@@ -142,8 +144,8 @@ void processInput(GLFWwindow *window)
 	if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
 		camera->moveRight(speed);
 
-	if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
-		((ProjectCamera*)project)->changeShowWhat();
+	//if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+	//	((ProjectCamera*)project)->changeShowWhat();
 }
 
 void mouse_callback(GLFWwindow* window, double xpos, double ypos) {

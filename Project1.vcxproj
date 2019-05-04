@@ -132,6 +132,7 @@
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="projects\ProjectCamera\ProjectCamera.cpp" />
+    <ClCompile Include="projects\ProjectLights\ProjectLights.cpp" />
     <ClCompile Include="projects\ProjectRasterization\ProjectRasterization.cpp" />
     <ClCompile Include="projects\ProjectTransformation\ProjectTransformation.cpp" />
     <ClCompile Include="projects\ProjectTriangle\ProjectTriangle.cpp" />
@@ -148,6 +149,7 @@
     <ClInclude Include="projects\Camera.h" />
     <ClInclude Include="projects\Project.h" />
     <ClInclude Include="projects\ProjectCamera\ProjectCamera.h" />
+    <ClInclude Include="projects\ProjectLights\ProjectLights.h" />
     <ClInclude Include="projects\ProjectRasterization\ProjectRasterization.h" />
     <ClInclude Include="projects\ProjectTransformation\ProjectTransformation.h" />
     <ClInclude Include="projects\ProjectTriangle\ProjectTriangle.h" />
@@ -158,6 +160,12 @@
     <None Include="imgui\imgui.ini" />
     <None Include="projects\ProjectCamera\glsl\shader.fs" />
     <None Include="projects\ProjectCamera\glsl\shader.vs" />
+    <None Include="projects\ProjectLights\glsl\Gourand_shader.fs" />
+    <None Include="projects\ProjectLights\glsl\Gourand_shader.vs" />
+    <None Include="projects\ProjectLights\glsl\light_shader.fs" />
+    <None Include="projects\ProjectLights\glsl\light_shader.vs" />
+    <None Include="projects\ProjectLights\glsl\shader.fs" />
+    <None Include="projects\ProjectLights\glsl\shader.vs" />
     <None Include="projects\ProjectRasterization\glsl\shader.fs" />
     <None Include="projects\ProjectRasterization\glsl\shader.vs" />
     <None Include="projects\ProjectTransformation\glsl\shader.fs" />

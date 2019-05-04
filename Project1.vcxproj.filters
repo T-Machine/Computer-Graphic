@@ -49,6 +49,12 @@
     <Filter Include="projects\ProjectCamera\glsl">
       <UniqueIdentifier>{b1c33a2c-dd9d-4150-b274-2c724c1865f0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="projects\ProjectLights">
+      <UniqueIdentifier>{1138d1a8-f3cc-4934-bded-79e276bc5169}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\ProjectLights\glsl">
+      <UniqueIdentifier>{2427b348-37a0-4c93-9137-276e0952c623}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\GLFW\glad\src\glad.c">
@@ -86,6 +92,9 @@
     </ClCompile>
     <ClCompile Include="projects\ProjectCamera\ProjectCamera.cpp">
       <Filter>projects\ProjectCamera</Filter>
+    </ClCompile>
+    <ClCompile Include="projects\ProjectLights\ProjectLights.cpp">
+      <Filter>projects\ProjectLights</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -137,6 +146,9 @@
     <ClInclude Include="projects\Camera.h">
       <Filter>projects</Filter>
     </ClInclude>
+    <ClInclude Include="projects\ProjectLights\ProjectLights.h">
+      <Filter>projects\ProjectLights</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini">
@@ -165,6 +177,24 @@
     </None>
     <None Include="projects\ProjectCamera\glsl\shader.vs">
       <Filter>projects\ProjectCamera\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectLights\glsl\light_shader.fs">
+      <Filter>projects\ProjectLights\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectLights\glsl\shader.fs">
+      <Filter>projects\ProjectLights\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectLights\glsl\shader.vs">
+      <Filter>projects\ProjectLights\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectLights\glsl\light_shader.vs">
+      <Filter>projects\ProjectLights\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectLights\glsl\Gourand_shader.fs">
+      <Filter>projects\ProjectLights\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectLights\glsl\Gourand_shader.vs">
+      <Filter>projects\ProjectLights\glsl</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
