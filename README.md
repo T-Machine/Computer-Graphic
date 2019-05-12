@@ -11,3 +11,6 @@
 [Project5 Camera](./report/Project5-Camera.md)
 
 [Project6 Lighting](./report/Project6-Lighting.md)
+
+[Project7 Shadow](./report/Project7-Shadow.md)
+
