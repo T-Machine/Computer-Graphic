@@ -55,6 +55,12 @@
     <Filter Include="projects\ProjectLights\glsl">
       <UniqueIdentifier>{2427b348-37a0-4c93-9137-276e0952c623}</UniqueIdentifier>
     </Filter>
+    <Filter Include="projects\ProjectShadow">
+      <UniqueIdentifier>{994bd7a0-209d-4e2d-b568-1c8e0eba7b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\ProjectShadow\glsl">
+      <UniqueIdentifier>{4bc4e496-4ad5-43ff-9909-6094a15dfbcc}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\GLFW\glad\src\glad.c">
@@ -95,6 +101,9 @@
     </ClCompile>
     <ClCompile Include="projects\ProjectLights\ProjectLights.cpp">
       <Filter>projects\ProjectLights</Filter>
+    </ClCompile>
+    <ClCompile Include="projects\ProjectShadow\ProjectShadow.cpp">
+      <Filter>projects\ProjectShadow</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -149,6 +158,9 @@
     <ClInclude Include="projects\ProjectLights\ProjectLights.h">
       <Filter>projects\ProjectLights</Filter>
     </ClInclude>
+    <ClInclude Include="projects\ProjectShadow\ProjectShadow.h">
+      <Filter>projects\ProjectShadow</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini">
@@ -195,6 +207,18 @@
     </None>
     <None Include="projects\ProjectLights\glsl\Gourand_shader.vs">
       <Filter>projects\ProjectLights\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectShadow\glsl\depthShader.fs">
+      <Filter>projects\ProjectShadow\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectShadow\glsl\depthShader.vs">
+      <Filter>projects\ProjectShadow\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectShadow\glsl\sceneShader.fs">
+      <Filter>projects\ProjectShadow\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectShadow\glsl\sceneShader.vs">
+      <Filter>projects\ProjectShadow\glsl</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

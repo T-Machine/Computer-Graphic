@@ -14,6 +14,7 @@ class Camera {
 public:
 	Camera(float zPos);
 	glm::mat4 getCameraView();
+	glm::vec3 getCameraPos();
 	void moveForward(float speed);
 	void moveBack(float speed);
 	void moveRight(float speed);
@@ -38,6 +39,10 @@ Camera::Camera(float zPos) {
 glm::mat4 Camera::getCameraView() {
 	cameraView = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
 	return cameraView;
+}
+
+glm::vec3 Camera::getCameraPos() {
+	return cameraPos;
 }
 
 void Camera::moveForward(float speed) {

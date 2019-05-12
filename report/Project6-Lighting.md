@@ -1,4 +1,6 @@
-# Project6 Camera
+# Project6 Lighting
+
+源代码地址：<https://github.com/T-Machine/Computer-Graphic>
 
 ## 实现内容
 

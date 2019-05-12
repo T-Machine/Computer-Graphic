@@ -25,6 +25,8 @@ private:
 
 public:
 	virtual void draw() = 0;
+	virtual void updateCameraView(glm::mat4 cameraView_) = 0;
+	virtual void updateCameraPos(glm::vec3 cameraPos_) = 0;
 };
 
 

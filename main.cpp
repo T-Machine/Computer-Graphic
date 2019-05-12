@@ -14,6 +14,7 @@
 #include "projects/ProjectTransformation/ProjectTransformation.h"
 #include "projects/ProjectCamera/ProjectCamera.h"
 #include "projects/ProjectLights/ProjectLights.h"
+#include "projects/ProjectShadow/ProjectShadow.h"
 
 
 #include <glm/glm.hpp>
@@ -81,7 +82,8 @@ int main()
 	//Project *project = new ProjectTriangle();
 	//Project *project = new ProjectTransformation();
 	//project = new ProjectCamera(window);
-	Project *project = new ProjectLights();
+	//Project *project = new ProjectLights();
+	project = new ProjectShadow(window);
 
 	camera = new Camera(10.0f);
 
@@ -101,7 +103,8 @@ int main()
 		ImGui_ImplGlfw_NewFrame();
 		ImGui::NewFrame();
 
-		//((ProjectCamera*)project)->updateCameraView(camera->getCameraView());
+		project->updateCameraView(camera->getCameraView());
+		project->updateCameraPos(camera->getCameraPos());
 		project->draw();
 
 		//ImGui::ShowDemoWindow(&show_demo_window);

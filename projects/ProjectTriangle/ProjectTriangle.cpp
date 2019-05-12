@@ -66,3 +66,11 @@ void ProjectTriangle::render() {
 	glDeleteBuffers(1, &EBO);
 
 }
+
+void ProjectTriangle::updateCameraView(glm::mat4 cameraView_) {
+	//cameraView = cameraView_;
+}
+
+void ProjectTriangle::updateCameraPos(glm::vec3 cameraPos_) {
+	//cameraPos = cameraPos_;
+}

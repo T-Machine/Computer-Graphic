@@ -183,3 +183,11 @@ void ProjectLights::render() {
 	glDeleteBuffers(1, &VBO);
 	
 }
+
+void ProjectLights::updateCameraView(glm::mat4 cameraView_) {
+	//cameraView = cameraView_;
+}
+
+void ProjectLights::updateCameraPos(glm::vec3 cameraPos_) {
+	//cameraPos = cameraPos_;
+}

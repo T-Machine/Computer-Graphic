@@ -134,6 +134,7 @@
     <ClCompile Include="projects\ProjectCamera\ProjectCamera.cpp" />
     <ClCompile Include="projects\ProjectLights\ProjectLights.cpp" />
     <ClCompile Include="projects\ProjectRasterization\ProjectRasterization.cpp" />
+    <ClCompile Include="projects\ProjectShadow\ProjectShadow.cpp" />
     <ClCompile Include="projects\ProjectTransformation\ProjectTransformation.cpp" />
     <ClCompile Include="projects\ProjectTriangle\ProjectTriangle.cpp" />
   </ItemGroup>
@@ -151,6 +152,7 @@
     <ClInclude Include="projects\ProjectCamera\ProjectCamera.h" />
     <ClInclude Include="projects\ProjectLights\ProjectLights.h" />
     <ClInclude Include="projects\ProjectRasterization\ProjectRasterization.h" />
+    <ClInclude Include="projects\ProjectShadow\ProjectShadow.h" />
     <ClInclude Include="projects\ProjectTransformation\ProjectTransformation.h" />
     <ClInclude Include="projects\ProjectTriangle\ProjectTriangle.h" />
     <ClInclude Include="projects\tool.h" />
@@ -168,6 +170,10 @@
     <None Include="projects\ProjectLights\glsl\shader.vs" />
     <None Include="projects\ProjectRasterization\glsl\shader.fs" />
     <None Include="projects\ProjectRasterization\glsl\shader.vs" />
+    <None Include="projects\ProjectShadow\glsl\depthShader.fs" />
+    <None Include="projects\ProjectShadow\glsl\depthShader.vs" />
+    <None Include="projects\ProjectShadow\glsl\sceneShader.fs" />
+    <None Include="projects\ProjectShadow\glsl\sceneShader.vs" />
     <None Include="projects\ProjectTransformation\glsl\shader.fs" />
     <None Include="projects\ProjectTransformation\glsl\shader.vs" />
     <None Include="projects\ProjectTriangle\glsl\shader.fs" />

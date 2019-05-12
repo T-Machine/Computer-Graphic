@@ -48,6 +48,9 @@ public:
 	void Bresenham_circle(int r);
 	void draw_circle_8(int x, int y);
 	void Triangle_Rasterization(int x0, int y0, int x1, int y1, int x2, int y2);
+
+	void updateCameraView(glm::mat4 cameraView_);
+	void updateCameraPos(glm::vec3 cameraPos_);
 };
 
 #endif

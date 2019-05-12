@@ -216,3 +216,11 @@ void ProjectRasterization::Triangle_Rasterization(int x0, int y0, int x1, int y1
 		}
 	}
 }
+
+void ProjectRasterization::updateCameraView(glm::mat4 cameraView_) {
+	//cameraView = cameraView_;
+}
+
+void ProjectRasterization::updateCameraPos(glm::vec3 cameraPos_) {
+	//cameraPos = cameraPos_;
+}

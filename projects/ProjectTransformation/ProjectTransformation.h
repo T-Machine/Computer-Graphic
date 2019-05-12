@@ -70,6 +70,8 @@ public:
 	ProjectTransformation();
 	void draw();
 	void render();
+	void updateCameraView(glm::mat4 cameraView_);
+	void updateCameraPos(glm::vec3 cameraPos_);
 };
 
 #endif

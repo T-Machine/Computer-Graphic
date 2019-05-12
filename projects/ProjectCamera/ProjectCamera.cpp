@@ -146,6 +146,10 @@ void ProjectCamera::updateCameraView(glm::mat4 cameraView_) {
 	cameraView = cameraView_;
 }
 
+void ProjectCamera::updateCameraPos(glm::vec3 cameraPos_) {
+	//cameraPos = cameraPos_;
+}
+
 void ProjectCamera::changeShowWhat() {
 	//取消鼠标捕获
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);

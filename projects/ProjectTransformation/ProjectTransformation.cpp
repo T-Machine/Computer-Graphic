@@ -160,3 +160,11 @@ void ProjectTransformation::render() {
 	glDeleteBuffers(1, &VBO);
 	
 }
+
+void ProjectTransformation::updateCameraView(glm::mat4 cameraView_) {
+	//cameraView = cameraView_;
+}
+
+void ProjectTransformation::updateCameraPos(glm::vec3 cameraPos_) {
+	//cameraPos = cameraPos_;
+}
