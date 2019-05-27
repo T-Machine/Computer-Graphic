@@ -14,3 +14,5 @@
 
 [Project7 Shadow](./report/Project7-Shadow.md)
 
+[Project8 Bezier](./report/Project8-Bezier.md)
+
