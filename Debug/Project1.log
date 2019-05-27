@@ -1,2 +1,4 @@
-﻿  ProjectShadow.cpp
+﻿  ProjectBezier.cpp
+c:\users\chentp\source\repos\openglproject\project1\projects\projectbezier\projectbezier.cpp(96): warning C4305: “+=”: 从“double”到“float”截断
+c:\users\chentp\source\repos\openglproject\project1\projects\projectbezier\projectbezier.cpp(114): warning C4305: “+=”: 从“double”到“float”截断
   Project1.vcxproj -> C:\Users\chentp\source\repos\OpenGLproject\Debug\OpenGLproject.exe

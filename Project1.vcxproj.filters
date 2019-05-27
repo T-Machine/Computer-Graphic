@@ -61,6 +61,12 @@
     <Filter Include="projects\ProjectShadow\glsl">
       <UniqueIdentifier>{4bc4e496-4ad5-43ff-9909-6094a15dfbcc}</UniqueIdentifier>
     </Filter>
+    <Filter Include="projects\ProjectBezier">
+      <UniqueIdentifier>{47173afc-f221-4d21-8c98-f629cf5d0bf5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="projects\ProjectBezier\glsl">
+      <UniqueIdentifier>{28ba20d5-85c5-4536-92f1-0d9b8e3494d9}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\..\..\GLFW\glad\src\glad.c">
@@ -104,6 +110,9 @@
     </ClCompile>
     <ClCompile Include="projects\ProjectShadow\ProjectShadow.cpp">
       <Filter>projects\ProjectShadow</Filter>
+    </ClCompile>
+    <ClCompile Include="projects\ProjectBezier\ProjectBezier.cpp">
+      <Filter>projects\ProjectBezier</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="projects\ProjectShadow\ProjectShadow.h">
       <Filter>projects\ProjectShadow</Filter>
+    </ClInclude>
+    <ClInclude Include="projects\ProjectBezier\ProjectBezier.h">
+      <Filter>projects\ProjectBezier</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -219,6 +231,12 @@
     </None>
     <None Include="projects\ProjectShadow\glsl\sceneShader.vs">
       <Filter>projects\ProjectShadow\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectBezier\glsl\shader.fs">
+      <Filter>projects\ProjectBezier\glsl</Filter>
+    </None>
+    <None Include="projects\ProjectBezier\glsl\shader.vs">
+      <Filter>projects\ProjectBezier\glsl</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

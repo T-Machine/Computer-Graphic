@@ -15,6 +15,7 @@
 #include "projects/ProjectCamera/ProjectCamera.h"
 #include "projects/ProjectLights/ProjectLights.h"
 #include "projects/ProjectShadow/ProjectShadow.h"
+#include "projects/ProjectBezier/ProjectBezier.h"
 
 
 #include <glm/glm.hpp>
@@ -27,6 +28,7 @@ using namespace std;
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 void processInput(GLFWwindow *window);
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods);
 
 const char* glsl_version = "#version 330";
 Camera *camera;
@@ -63,6 +65,8 @@ int main()
 	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
 	//注册鼠标移动回调函数
 	glfwSetCursorPosCallback(window, mouse_callback);
+	//注册鼠标点击事件
+	glfwSetMouseButtonCallback(window, mouseButtonCallback);
 
 	//初始化GLAD
 	if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -83,7 +87,8 @@ int main()
 	//Project *project = new ProjectTransformation();
 	//project = new ProjectCamera(window);
 	//Project *project = new ProjectLights();
-	project = new ProjectShadow(window);
+	//project = new ProjectShadow(window);
+	project = new ProjectBezier(window);
 
 	camera = new Camera(10.0f);
 
@@ -168,4 +173,15 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos) {
 
 	camera->rotateCamera(yaw, pitch);
 
+}
+
+void mouseButtonCallback(GLFWwindow* window, int button, int action, int mods) {
+	if (action == GLFW_PRESS && button == GLFW_MOUSE_BUTTON_LEFT) {
+		float x = last_mouseX / SCREEN_W * 2 - 1;
+		float y = - (last_mouseY / SCREEN_H * 2 - 1);
+		((ProjectBezier*)project)->addControlPoint(glm::vec2(x, y));
+	}
+	if (action == GLFW_PRESS && button == GLFW_MOUSE_BUTTON_RIGHT) {
+		((ProjectBezier*)project)->deleteControlPoint();
+	}
 }

@@ -131,6 +131,7 @@
     <ClCompile Include="imgui\imgui_impl_opengl3.cpp" />
     <ClCompile Include="imgui\imgui_widgets.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="projects\ProjectBezier\ProjectBezier.cpp" />
     <ClCompile Include="projects\ProjectCamera\ProjectCamera.cpp" />
     <ClCompile Include="projects\ProjectLights\ProjectLights.cpp" />
     <ClCompile Include="projects\ProjectRasterization\ProjectRasterization.cpp" />
@@ -149,6 +150,7 @@
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="projects\Camera.h" />
     <ClInclude Include="projects\Project.h" />
+    <ClInclude Include="projects\ProjectBezier\ProjectBezier.h" />
     <ClInclude Include="projects\ProjectCamera\ProjectCamera.h" />
     <ClInclude Include="projects\ProjectLights\ProjectLights.h" />
     <ClInclude Include="projects\ProjectRasterization\ProjectRasterization.h" />
@@ -160,6 +162,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imgui\imgui.ini" />
+    <None Include="projects\ProjectBezier\glsl\shader.fs" />
+    <None Include="projects\ProjectBezier\glsl\shader.vs" />
     <None Include="projects\ProjectCamera\glsl\shader.fs" />
     <None Include="projects\ProjectCamera\glsl\shader.vs" />
     <None Include="projects\ProjectLights\glsl\Gourand_shader.fs" />

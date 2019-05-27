@@ -14,6 +14,7 @@
 
 #define SCREEN_W 800
 #define SCREEN_H 600
+#define MAX_POINT 42000
 
 using namespace std;
 

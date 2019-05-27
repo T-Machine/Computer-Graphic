@@ -3,7 +3,6 @@
 #define _PROJECT_RASTERIZATION_
 #include "../Project.h"
 #include <vector>
-#define MAX_POINT 42000
 #define POINT_SIZE 7
 #define WIN_W 105
 #define WIN_H 105
